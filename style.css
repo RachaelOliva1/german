@@ -1,0 +1,714 @@
+.intro {
+  border: 20px solid transparent;
+  border-image-source: url(https://davidsbeenhere.com/wp-content/uploads/2019/07/The_5_Best_Cities_To_Visit_In_Germany_Europe_Davidsbeenhere3.png);
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+  color: #5e3110;
+  text-align: center;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+   margin: 40px auto; 
+}
+
+
+
+.collage-page-wrapper {
+  display: grid;
+  grid-template-columns: 250px 1fr 250px; 
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+.header-box {
+  grid-column: 2;
+  grid-row: 1 / span 3; 
+  border: 30px solid transparent;
+   border-image-source: url(https://image.jimcdn.com/app/cms/image/transf/none/path/sa6549607c78f5c11/image/i5a5d21c5bba61e8d/version/1606328435/best-places-to-visit-in-germany.jpg);
+  border-image-slice: 50;
+  border-image-repeat: stretch;
+  color: #000000;
+  padding: 40px;
+  text-align: center;
+  z-index: 10; 
+}
+
+
+.collage-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  display: block;
+  transform: scale(1.15);
+}
+
+
+
+.img-top-right {
+  grid-column: 3;
+  grid-row: 1;
+  clip-path: polygon(15% 0%, 100% 0%, 100% 80%, 0% 100%);
+  transform: rotate(2deg);
+}
+
+
+.img-mid-left {
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; 
+}
+
+
+.img-mid-right {
+  grid-column: 3;
+  grid-row: 2;
+  clip-path: polygon(10% 20%, 100% 0%, 90% 80%, 0% 100%);
+}
+
+
+.img-bottom-left {
+  grid-column: 1;
+  grid-row: 3;
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  transform: rotate(-3deg);
+}
+
+
+.img-bottom-right {
+  grid-column: 3;
+  grid-row: 3;
+  clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 20% 100%);
+}
+
+
+.collage-img:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 20;
+}
+
+.collage-item {
+  display: block;
+  position: relative; 
+  width: 100%;
+  height: 250px;
+  text-decoration: none;
+  overflow: hidden;   
+}
+.image-zoom-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+}
+.collage-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffeba8;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 0;       
+  transition: opacity 0.4s ease;
+  z-index: 2;      
+}
+
+.collage-item:hover .collage-text {
+  opacity: 1;
+}
+.collage-item:hover .collage-img {
+  transform: scale(1.1); 
+}
+.img-top-left {
+  grid-column: 1;
+  grid-row: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 85% 100%, 0% 80%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       .header{
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 40px;
+  color: #000000;
+  font-family: Copperplate, Papyrus, fantasy;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; 
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+}
+
+
+.gallery-item {
+  border: 10px solid #000000;
+  background-color: #000000;
+  overflow: hidden;
+  height: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.img-two {
+  margin-top: 50px;
+}
+.img-four {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.list-container {
+  border: 10px solid #000000;
+  
+  padding: 40px;
+  min-height: auto; 
+}
+
+.places-list {
+  margin: 20;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 2.5; 
+  color: #000000;
+}
+
+.places-list li {
+  margin-bottom: 15px;
+}
+
+li {
+  font-size:20px;
+  font-family: Copperplate, Papyrus, fantasy;
+  line-height: 1.1;
+}
+
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+  .img-two, .img-four {
+    margin-top: 0; 
+  }
+}
+
+.top-nav {
+    display: flex;
+
+    align-items: center;            
+    padding: 15px 30px;
+    font-family: Copperplate, Papyrus, fantasy;
+    background-color: black;
+    
+}
+
+
+.nav-link a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;             
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.nav-link a:hover {
+    color: #facd03;                
+}
+
+.nav-link {
+  display: flex;
+  margin: 0 auto; 
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.food-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px;
+}
+
+
+.food-item {
+  border: 10px solid #000000;
+  background-color: #000000;
+  overflow: hidden;
+  height: 200px;
+}
+
+.food-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.img-two {
+  margin-top: 50px;
+}
+.img-four {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.food-container {
+  border: 10px solid #000000;
+  
+  padding: 40px;
+  min-height: auto; 
+}
+
+.food-list {
+  margin: 20;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 2.5; 
+  color: #000000;
+}
+
+.food-list li {
+  margin-bottom: 15px;
+}
+
+li {
+  font-size:20px;
+  font-family: Copperplate, Papyrus, fantasy;
+  line-height: 1.1;
+}
+
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+  .img-two, .img-four {
+    margin-top: 0; 
+  }
+}
+
+
+
+
+
+
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 30px;           
+  max-width: 1000px;
+  margin: 0 auto;      
+}
+.content-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  gap: 40px;              
+  max-width: 1200px;
+  margin: 0 auto;         
+  padding: 0 20px;
+}
+.festival-image {
+  width: 500px;            
+  aspect-ratio: 1 / 1;    
+  object-fit: cover;       
+  flex-shrink: 0;        
+}
+
+
+
+.oktoberfest-box {
+  width: 350px;      
+  aspect-ratio: 1 / 1; 
+  border: 10px solid #000000;
+  background-color: #000000;
+  overflow: hidden;
+  flex-shrink: 0;    
+}
+
+.oktoberfest-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+
+.text-box {
+  flex: 1;          
+  border: 10px solid #000000;
+ 
+  padding: 30px;
+  color: #000000;
+}
+p{
+font-size:20px;
+  font-family: Copperplate, Papyrus, fantasy;
+  line-height: 1.1;
+}
+
+
+@media (max-width: 768px) {
+  .row-container {
+    flex-direction: column; 
+    align-items: stretch;
+  }
+  .image-box {
+    width: 100%; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.column-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 30px;           
+  max-width: 1000px;
+  margin: 0 auto;      
+}
+.content-column {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  gap: 40px;              
+  max-width: 1200px;
+  margin: 0 auto;         
+  padding: 0 20px;
+}
+.clothing-image {
+  width: 500px;            
+  aspect-ratio: 1 / 1;    
+  object-fit: cover;       
+  flex-shrink: 0;        
+}
+
+
+
+.clothing-box {
+  width: 350px;      
+  aspect-ratio: 1 / 1; 
+  border: 10px solid #000000;
+  background-color: #000000;
+  overflow: hidden;
+  flex-shrink: 0;    
+}
+
+.clothing-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+
+.text-box {
+  flex: 1;          
+  border: 10px solid #000000;
+ 
+  padding: 30px;
+  color: #000000;
+}
+p{
+font-size:20px;
+  font-family: Copperplate, Papyrus, fantasy;
+  line-height: 1.1;
+}
+
+
+@media (max-width: 768px) {
+  .row-container {
+    flex-direction: column; 
+    align-items: stretch;
+  }
+  .image-box {
+    width: 100%; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.split-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; 
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.image-stack {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;             
+  width: 55%;            
+}
+
+.horizontal-img {
+  border: 10px solid #000000;
+  background-color: #000000;
+  height: 180px;         
+  overflow: hidden;
+}
+
+.horizontal-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+}
+
+.tall-text-box {
+  flex: 1;                
+  border: 10px solid #000000;
+  padding: 30px;
+  color: #000000;
+  box-sizing: border-box;
+ 
+}
+
+.par {
+  line-height: 1.2;
+}
+
+
+
+@media (max-width: 900px) {
+  .split-layout {
+    flex-direction: column;
+  }
+  .image-stack {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.his-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  gap: 30px;           
+  max-width: 1000px;
+  margin: 0 auto;      
+}
+.content-his {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; 
+  gap: 40px;              
+  max-width: 1200px;
+  margin: 0 auto;         
+  padding: 0 20px;
+}
+.historical-image {
+  width: 500px;            
+  aspect-ratio: 1 / 1;    
+  object-fit: cover;       
+  flex-shrink: 0;        
+}
+
+
+
+.his-box {
+  width: 350px;      
+  aspect-ratio: 1 / 1; 
+  border: 10px solid #000000;
+  background-color: #000000;
+  overflow: hidden;
+  flex-shrink: 0;    
+}
+
+.his-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+
+.text-box {
+  flex: 1;          
+  border: 10px solid #000000;
+ 
+  padding: 30px;
+  color: #000000;
+}
+
+
+
+@media (max-width: 768px) {
+  .row-container {
+    flex-direction: column; 
+    align-items: stretch;
+  }
+  .image-box {
+    width: 100%; 
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.layout-section {
+  max-width: 1000px;
+  margin: 0 auto 50px auto; 
+}
+
+
+.section-header {
+  font-size: 36px;
+  margin: 0 0 15px 0;
+  text-align: left;
+}
+
+
+
+.large-text-box {
+  border: 4px solid #000000;
+  background-color: #000000;
+  padding: 40px 30px;
+  min-height: 120px; 
+}
+
+.large-text-box p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+.fact-table-box {
+  border: 10px solid #000000;
+display: grid;
+  grid-template-columns: 80px 1fr; 
+}
+
+
+.table-cell {
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.4;
+  display: flex;
+  align-items: center; 
+}
+
+.cell-num {
+  font-weight: bold;
+  color: #000000; 
+  border-right: 2px solid #000000; 
+}
+
+
+.cell-text {
+  padding-left: 25px;
+}
+
+
+.border-bottom {
+  border-bottom: 2px solid #000000;
+}
